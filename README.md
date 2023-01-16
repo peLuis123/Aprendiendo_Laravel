@@ -74,4 +74,8 @@ para no tener errores tienes que darle el atributo de NULLABLE para que no tenga
 ejecutar el comando composer require doctrine/dbal
 seguidamente creo otra migracion php artisan make:migration cambiar_propiedades_to_nombredelatabla_table
 
-$table->string('name',150)->change();//siempre se debe de usar el change segun documentacion
+table->string('name',150)->change();//siempre se debe de usar el change segun documentacion
+
+## Para poder operar en las distintas bases de datos 
+
+primero creamos un modelo con el comando *php artisan make:model curso
